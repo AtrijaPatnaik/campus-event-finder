@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Campus Event Finder</title>
-    <style>
-        body { font-family: Arial; margin: 40px; }
-        input, textarea { display: block; width: 300px; margin-bottom: 10px; }
-        .event { border: 1px solid #ccc; padding: 10px; margin-top: 10px; border-radius: 5px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Event Finder</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
     <h1>Campus Event Finder</h1>
-    <form action="/add" method="post">
-        <input type="text" name="title" placeholder="Event Title" required>
-        <input type="date" name="date" required>
-        <textarea name="desc" placeholder="Event Description"></textarea>
-        <button type="submit">Add Event</button>
-    </form>
+  </header>
 
-    <h2>Upcoming Events</h2>
-    {% for event in events %}
-        <div class="event">
-            <strong>{{ event.title }}</strong> on <em>{{ event.date }}</em><br>
-            <p>{{ event.desc }}</p>
-        </div>
-    {% endfor %}
+  <section id="events">
+    <div class="event">
+      <h2>AI Workshop</h2>
+      <p>Date: 25th July 2025</p>
+      <p>Location: Seminar Hall A</p>
+    </div>
+
+    <div class="event">
+      <h2>Hackathon 2K25</h2>
+      <p>Date: 30th July 2025</p>
+      <p>Location: CSE Block</p>
+    </div>
+
+    <div class="event">
+      <h2>Cultural Fest</h2>
+      <p>Date: 10th August 2025</p>
+      <p>Location: Open Auditorium</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created by Panchali Atrija | Mini Project</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
