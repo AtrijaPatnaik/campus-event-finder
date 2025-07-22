@@ -23,6 +23,29 @@ header {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+.add-event {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.add-event input {
+  margin: 10px 5px;
+  padding: 10px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.add-event button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 #events {
   padding: 20px;
@@ -35,6 +58,7 @@ header {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+
 
 footer {
   text-align: center;
